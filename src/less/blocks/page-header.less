@@ -1,0 +1,36 @@
+.page-header {
+	display: block;
+  	color: @text-color;
+
+	
+	&__inner{
+		.container()
+	}
+}
+
+.main-nav{
+    &__item{
+        font-family: @main-font;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: @font-size;
+        line-height: 50px;
+
+        display: block;
+
+        list-style: none;
+
+        text-align: center;
+    }
+    &__link{
+        &--active{
+            color: @brand-color;
+        }
+    }
+    &__nav{
+        width: 100%;
+        @media(max-width: @screen-md){
+            display: none;
+        }
+    }
+}
