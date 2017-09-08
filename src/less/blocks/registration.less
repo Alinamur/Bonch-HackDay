@@ -70,12 +70,13 @@
 
 	&__inputs {
 		display: block;
+		outline: none;
 		margin: 20px 0 30px 30px;
 		padding: 10px 20px;
 		border: 1px solid @dark-grey;
 		border-radius: 3px;
 		font-size: 12px;
-		font-weight: 600;
+		font-weight: 500;
 		min-width: 210px;
 
 		@media(min-width: @screen-lg){
@@ -90,6 +91,7 @@
 			min-width: 10px;
 			display: inline-block;
 			margin-right: 15px;
+			outline: none;
 		}
 
 		&--radio {
@@ -120,34 +122,10 @@
 	margin-bottom: 30px;
 }
 
-#dropZone {    
-    color: #555;
-    font-size: 18px;
-    text-align: center;    
-    
-    width: 400px;
-    padding: 50px 0;
-    margin: 50px auto;
-    
-    background: #eee;
-    border: 1px solid #ccc;
-    
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+input:required:valid {
+  border-color: green;
 }
 
-#dropZone.hover {
-    background: #ddd;
-    border-color: #aaa;
-}
-
-#dropZone.error {
-    background: #faa;
-    border-color: #f00;
-}
-
-#dropZone.drop {
-    background: #afa;
-    border-color: #0f0;
+.dropzone{
+	position: absolute;
 }

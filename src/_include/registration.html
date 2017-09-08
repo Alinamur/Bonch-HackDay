@@ -3,55 +3,54 @@
 		
 		<h2 class="heading heading--line">Регистрация</h2>
 
-		<form action="" class="form">
+		<!-- <form action="" method="post" enctype="multipart/form-data">  
+			<input type="file" name="file" />
+		</form> -->
+
+		<form action="send.php" method="post" class="form">
 
 			<p class="form__heading">Регистрация на Bonch HackDay</p>
 			
-			<!-- <form action="upload.php">
-      			<div id="dropZone">
-        			Для загрузки, перетащите файл сюда.
-      			</div>
-    		</form> -->  
 
 			<p class="form__photo">Фотография</p>
 			<p class="form__photo">Вы можете загрузить изображение в формате JPG, не более 2 МБ. Если у Вас возникают проблемы с загрузкой, попробуйте выбрать фотографию меньшего размера. Изображение должно быть четкое, положение фотографируемого в анфас, на фото должен находиться только один человек – участник</p>
 
 			<div class="form__items"><label for="#lastname" class="form__labels">Фамилия</label>
-			<input class="form__inputs"	id="lastname" type="text" placeholder="Иванов">
+			<input class="form__inputs"	id="lastname" type="text" placeholder="Иванов" required>
 			</div>
 
 			<div class="form__items"><label for="#firstname" class="form__labels">Имя</label>
-			<input class="form__inputs"	id="firstname" type="text" placeholder="Семён">
+			<input class="form__inputs"	id="firstname" type="text" placeholder="Семён" required>
 			</div>
 
 			<div class="form__items"><label for="#familyname" class="form__labels">Отчество</label>
-			<input class="form__inputs"	id="familyname" type="text" placeholder="Петрович">
+			<input class="form__inputs"	id="familyname" type="text" placeholder="Петрович" required>
 			</div>
 
 			<div class="form__items"><label for="#university" class="form__labels">ВУЗ</label>
-			<input class="form__inputs form__inputs--long"	id="university" type="text" placeholder="Введите название университета">
+			<input class="form__inputs form__inputs--long"	id="university" type="text" placeholder="Введите название университета" required>
 			</div>
 
 			<div class="form__items"><label for="#telephone" class="form__labels">Номер телефона</label>
-			<input class="form__inputs form__inputs--long"	id="telephone" type="text" placeholder="8(911)-257-23-22">
+			<input class="form__inputs form__inputs--long"	id="telephone" type="tel" placeholder="+7 (123) 456-78-91" required>
 			</div>
 
-			<div class="form__items"><input class="form__inputs form__inputs--checkbox" type="checkbox" > У вас есть команда?
+			<div class="form__items"><input class="form__inputs form__inputs--checkbox" type="checkbox" name="team"> У вас есть команда?
 			<input class="form__inputs form__inputs--long" type="text" placeholder="Введите название команды">
 			</div>
 			
 			<div class="form__items"><label for="#courses" class="form__labels">Какое направление вы выбрали?</label>
 
 			<div>
-			<input class="form__inputs form__inputs--radio"	id="courses" name="courses"	type="radio"><p class="form__inputs--text">Интернет вещей</p>
+			<input class="form__inputs form__inputs--radio"	id="courses" name="courses"	type="radio"><p class="form__inputs--text" required>Интернет вещей</p>
 			</div>
 
 			<div>
-			<input class="form__inputs form__inputs--radio"	id="courses" name="courses"	type="radio"><p class="form__inputs--text">Виртуальная реальность</p>
+			<input class="form__inputs form__inputs--radio"	id="courses" name="courses"	type="radio"><p class="form__inputs--text" required>Виртуальная реальность</p>
 			</div>
 
 			<div>
-			<input class="form__inputs form__inputs--radio"	id="courses" name="courses"	type="radio"><p class="form__inputs--text">Технологии обработки данных</p>
+			<input class="form__inputs form__inputs--radio"	id="courses" name="courses"	type="radio"><p class="form__inputs--text" required>Технологии обработки данных</p>
 			</div>
 			</div>
 			
@@ -61,9 +60,9 @@
 
 			<input type="submit" class="button button-bordered">
 
-			<input class="form__inputs form__inputs--checkbox" type="checkbox" id="data">
+			<input class="form__inputs form__inputs--checkbox" type="checkbox" id="data" required>
 
-			<label for="#data" class="form__labels form__labels--data">Согласие на обработку персональных данных</label>
+			<label for="#data" class="form__labels form__labels--data" >Согласие на обработку персональных данных</label>
 
 
 		</form>
