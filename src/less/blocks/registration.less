@@ -1,0 +1,153 @@
+.registration{
+	&__inner{
+		// .container()
+	}
+}
+.form{
+
+	display: block;
+	margin: 0 auto;
+	
+
+	&__photo {
+		@media(min-width: @screen-lg){
+            max-width: 420px;
+        }
+	}
+
+	@media(min-width: @screen-lg){
+            width: 66.66%;
+            box-shadow: 3px 3px 18px 0 rgba(0, 0, 0, 0.3);
+      }
+
+	&__items {
+		@media(min-width: @screen-lg){
+            display: inline-block;
+            vertical-align: top;
+
+            &--pl {
+            	padding-left: 80px;
+            }
+        } 
+	}
+	&__heading{
+		font-size: 18px;
+		line-height: 50px;
+		color: @main-dark-color;
+		text-align: center;
+
+		@media(min-width: @screen-lg){
+            font-size: 24px;
+        } 
+	}
+
+	&__photo{
+		font-size: 14px;
+		line-height: 20px;
+		padding-left: 115px;
+
+		@media(min-width: @screen-lg){
+            padding-left: 250px;
+        }
+	}
+
+	&__labels{
+		font-size: 14px;
+		line-height: 26px;
+		display: block;
+		padding-left: 30px;
+
+		@media(min-width: @screen-lg){
+
+        }
+
+		&--data {
+			font-size: 12px;
+			display: inline-block;
+			padding-left: 0;
+		}
+	}
+
+	&__inputs {
+		display: block;
+		margin: 20px 0 30px 30px;
+		padding: 10px 20px;
+		border: 1px solid @dark-grey;
+		border-radius: 3px;
+		font-size: 12px;
+		font-weight: 600;
+		min-width: 210px;
+
+		@media(min-width: @screen-lg){
+           display: inline-block;
+
+           &--long {
+        	min-width: 360px;
+        }
+        }
+
+		&--checkbox {
+			min-width: 10px;
+			display: inline-block;
+			margin-right: 15px;
+		}
+
+		&--radio {
+			min-width: 10px;
+			display: inline-block;
+			margin-right: 30px;
+			outline: none;
+		}
+
+		&--text {
+			font-size: 12px;
+			display: inline-block;
+		}
+
+		&--textarea {
+			resize: vertical;
+		}
+	}
+}
+
+.button-bordered {
+	background-color: transparent;
+	border: 2px solid @main-bright-color;
+	margin: 0 auto;
+	display: block;
+	border-radius: 5px;
+	padding: 10px 70px;
+	margin-bottom: 30px;
+}
+
+#dropZone {    
+    color: #555;
+    font-size: 18px;
+    text-align: center;    
+    
+    width: 400px;
+    padding: 50px 0;
+    margin: 50px auto;
+    
+    background: #eee;
+    border: 1px solid #ccc;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#dropZone.hover {
+    background: #ddd;
+    border-color: #aaa;
+}
+
+#dropZone.error {
+    background: #faa;
+    border-color: #f00;
+}
+
+#dropZone.drop {
+    background: #afa;
+    border-color: #0f0;
+}

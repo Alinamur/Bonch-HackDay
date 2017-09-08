@@ -1,40 +1,70 @@
 <div class="registration">
 	<div class="registration__inner">
 		
-		<h2 class="registration__heading">Регистрация</h2>
+		<h2 class="heading heading--line">Регистрация</h2>
 
-		<form action="" class="registration__form">
+		<form action="" class="form">
 
 			<p class="form__heading">Регистрация на Bonch HackDay</p>
+			
+			<!-- <form action="upload.php">
+      			<div id="dropZone">
+        			Для загрузки, перетащите файл сюда.
+      			</div>
+    		</form> -->  
 
 			<p class="form__photo">Фотография</p>
 			<p class="form__photo">Вы можете загрузить изображение в формате JPG, не более 2 МБ. Если у Вас возникают проблемы с загрузкой, попробуйте выбрать фотографию меньшего размера. Изображение должно быть четкое, положение фотографируемого в анфас, на фото должен находиться только один человек – участник</p>
 
-			<label for="#lastname" class="form__labels">Фамилия</label>
+			<div class="form__items"><label for="#lastname" class="form__labels">Фамилия</label>
 			<input class="form__inputs"	id="lastname" type="text" placeholder="Иванов">
-			<label for="#firstname" class="form__labels">Имя</label>
+			</div>
+
+			<div class="form__items"><label for="#firstname" class="form__labels">Имя</label>
 			<input class="form__inputs"	id="firstname" type="text" placeholder="Семён">
-			<label for="#familyname" class="form__labels">Отчество</label>
+			</div>
+
+			<div class="form__items"><label for="#familyname" class="form__labels">Отчество</label>
 			<input class="form__inputs"	id="familyname" type="text" placeholder="Петрович">
+			</div>
 
-			<label for="#university" class="form__labels">ВУЗ</label>
-			<input class="form__inputs"	id="university" type="text" placeholder="Введите название вашего университета">
+			<div class="form__items"><label for="#university" class="form__labels">ВУЗ</label>
+			<input class="form__inputs form__inputs--long"	id="university" type="text" placeholder="Введите название университета">
+			</div>
 
-			<label for="#telephone" class="form__labels">Номер телефона</label>
-			<input class="form__inputs"	id="telephone" type="text" placeholder="8(911)-257-23-22">
+			<div class="form__items"><label for="#telephone" class="form__labels">Номер телефона</label>
+			<input class="form__inputs form__inputs--long"	id="telephone" type="text" placeholder="8(911)-257-23-22">
+			</div>
 
-			<input class="form__inputs form__inputs--checkbox" type="checkbox" > У вас есть команда?
-			<input class="form__inputs" type="text" placeholder="Введите название команды">
+			<div class="form__items"><input class="form__inputs form__inputs--checkbox" type="checkbox" > У вас есть команда?
+			<input class="form__inputs form__inputs--long" type="text" placeholder="Введите название команды">
+			</div>
 			
-			<label for="#courses" class="form__labels">Какое направление вы выбрали?</label>
-			<input class="form__inputs"	id="courses" name="courses"	type="radio" placeholder="8(911)-257-23-22">
-			<input class="form__inputs"	id="courses" name="courses"	type="radio" placeholder="8(911)-257-23-22">
-			<input class="form__inputs"	id="courses" name="courses"	type="radio" placeholder="8(911)-257-23-22">
-			
-			<label for="#languages" class="form__labels">Какими языками программирования вы владеете?</label>
-			<input class="form__inputs"	id="languages" type="textarea" placeholder="Перечислите языки программирования, которыми вы владеете">
+			<div class="form__items"><label for="#courses" class="form__labels">Какое направление вы выбрали?</label>
 
-			<input type="submit" class="button button-bordered">Отправить
+			<div>
+			<input class="form__inputs form__inputs--radio"	id="courses" name="courses"	type="radio"><p class="form__inputs--text">Интернет вещей</p>
+			</div>
+
+			<div>
+			<input class="form__inputs form__inputs--radio"	id="courses" name="courses"	type="radio"><p class="form__inputs--text">Виртуальная реальность</p>
+			</div>
+
+			<div>
+			<input class="form__inputs form__inputs--radio"	id="courses" name="courses"	type="radio"><p class="form__inputs--text">Технологии обработки данных</p>
+			</div>
+			</div>
+			
+			<div class="form__items form__items--pl"><label for="#languages" class="form__labels">Какими языками программирования вы владеете?</label>
+			<textarea class="form__inputs form__inputs--textarea"	id="languages" rows="8" cols="40" placeholder="Перечислите языки программирования, которыми вы владеете"></textarea>
+			</div>
+
+			<input type="submit" class="button button-bordered">
+
+			<input class="form__inputs form__inputs--checkbox" type="checkbox" id="data">
+
+			<label for="#data" class="form__labels form__labels--data">Согласие на обработку персональных данных</label>
+
 
 		</form>
 	</div>
