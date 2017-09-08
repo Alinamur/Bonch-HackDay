@@ -16,19 +16,19 @@
 			<p class="form__photo">Вы можете загрузить изображение в формате JPG, не более 2 МБ. Если у Вас возникают проблемы с загрузкой, попробуйте выбрать фотографию меньшего размера. Изображение должно быть четкое, положение фотографируемого в анфас, на фото должен находиться только один человек – участник</p>
 
 			<div class="form__items"><label for="#lastname" class="form__labels">Фамилия</label>
-			<input class="form__inputs"	id="lastname" type="text" placeholder="Иванов" required>
+			<input class="form__inputs"	name="lastname" id="lastname" type="text" placeholder="Иванов" required>
 			</div>
 
 			<div class="form__items"><label for="#firstname" class="form__labels">Имя</label>
-			<input class="form__inputs"	id="firstname" type="text" placeholder="Семён" required>
+			<input class="form__inputs"	name="firstname" id="firstname" type="text" placeholder="Семён" required>
 			</div>
 
 			<div class="form__items"><label for="#familyname" class="form__labels">Отчество</label>
-			<input class="form__inputs"	id="familyname" type="text" placeholder="Петрович" required>
+			<input class="form__inputs" name="familyname"	id="familyname" type="text" placeholder="Петрович" required>
 			</div>
 
 			<div class="form__items"><label for="#university" class="form__labels">ВУЗ</label>
-			<input class="form__inputs form__inputs--long"	id="university" type="text" placeholder="Введите название университета" required>
+			<input class="form__inputs form__inputs--long"	name="university" id="university" type="text" placeholder="Введите название университета" required>
 			</div>
 
 			<div class="form__items"><label for="#telephone" class="form__labels">Номер телефона</label>
@@ -55,7 +55,7 @@
 			</div>
 			
 			<div class="form__items form__items--pl"><label for="#languages" class="form__labels">Какими языками программирования вы владеете?</label>
-			<textarea class="form__inputs form__inputs--textarea"	id="languages" rows="8" cols="40" placeholder="Перечислите языки программирования, которыми вы владеете"></textarea>
+			<textarea name="languages" class="form__inputs form__inputs--textarea"	id="languages" rows="8" cols="40" placeholder="Перечислите языки программирования, которыми вы владеете"></textarea>
 			</div>
 
 			<input type="submit" class="button button-bordered">
