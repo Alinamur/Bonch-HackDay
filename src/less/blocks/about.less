@@ -38,14 +38,19 @@
         	line-height: 20px;
     	}
 
-    	@media (max-width: @screen-lg) {
-    		&--mobile{
-    			display: block;
-    		}
-    		&--desktop{
-    			display: none;
-    		}
-    	}
+    	&--desktop {
+        display: none;
+        
+      }
+
+      @media (min-width: @screen-lg) {
+        &--mobile{
+          display: none;
+        }
+        &--desktop{
+          display: block;
+        }
+      }
 
 	    }
 
