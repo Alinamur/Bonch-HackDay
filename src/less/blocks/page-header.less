@@ -3,6 +3,8 @@
     background-image: url(../img/page-header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    
 	
 	&__inner{
 		.container()
@@ -48,10 +50,15 @@
         margin-top: 50px;
         text-align: center;
         margin-bottom: 40px;
+        opacity: .7;
 
         @media(min-width: @screen-lg){
             margin-bottom: 160px;
         } 
+
+        &:hover {
+            opacity: 1;
+        }
 
     }
 
@@ -73,6 +80,7 @@
 .main-nav{
 
     padding-top: 40px;
+    
 
     &__item{
 
@@ -80,6 +88,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 50px;
+        outline: none;
 
         display: block;
 
@@ -99,17 +108,25 @@
         color: #fff;
         font-size: 16px;
         line-height: 50px;
-        padding-right: 60px;
+        margin-right: 60px;
+        outline: none;
     }
     &__nav{
 
         width: 100%;
         display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 100%;
         background-color: @main-bright-color;
 
         @media(min-width: @screen-lg){
             display: flex;
             background-color: transparent;
+            position: relative;
+            
         }
     }
 
@@ -117,9 +134,19 @@
         position: absolute;
         top: 20px;
         right: 15px;
+        z-index: 5;
 
          @media(min-width: @screen-lg){
             display: none;
+        }
+
+        &--active {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+            
         }
     }
 }
